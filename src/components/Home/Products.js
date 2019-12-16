@@ -33,7 +33,7 @@ export default function Products() {
                 <Title title="Our Products" />
                 <div className="row">
                     {data.product.edges.map(({node:product}) =>{
-                        return <Product key={product.id} product={product} />;
+                    return <Product key={product.id} product={product} />;
                     })}
                 </div>
 
