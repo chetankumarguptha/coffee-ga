@@ -7,7 +7,6 @@ import product from './product';
 
 
 const getProducts =  graphql`
-       
 {
  product: allContentfulCoffeeProduct {
    edges {
@@ -18,7 +17,7 @@ const getProducts =  graphql`
        image {
          fluid(maxHeight: 426) {
            src
-           ...GatsbyContentFluid_tracedSVG
+           ...GatsbyContentfulFluid_tracedSVG
          }
        }
      }
@@ -33,8 +32,8 @@ export default function Products() {
             <div className="container">
                 <Title title="Our Products" />
                 <div className="row">
-                    {data.products.edges.map((node:products) =>{
-                        return(<Product key={product.id} product={})
+                    {data.product.edges.map(({node:product}) =>{
+                        return <Product key={product.id} product={product} />;
                     })}
                 </div>
 
