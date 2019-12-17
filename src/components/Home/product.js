@@ -8,10 +8,17 @@ export default function product({product}) {
                 <Img fluid={product.image.fluid} className="card-img-top" />
                 <div className="card-body text-center">
                     <h6>{product.title}</h6>
-                    <h6> $ {product.price}</h6>
-                    <button className="btn btn-yellow mt-3 text-capitilized">
+                    {/* <h6> $ {product.price}</h6>
+                    <button className="btn btn-yellow mt-3 text-capitilized snipcart-add-item"
+                    data-item-id={product.id}
+                    data-item-price={product.price}
+                    data-item-url="https://coffeeshopee.netlify.com/"
+                    data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                    data-item-image={product.image.fluid.src}
+                    data-item-name="The Starry Night">
+                    >
                         add to card
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

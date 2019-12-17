@@ -7,6 +7,7 @@ import logoheader from '../../images/logo.svg'
 
 
 
+
 export default class Navbar extends Component {
 
     state = {
@@ -32,7 +33,7 @@ export default class Navbar extends Component {
         return (
             <nav className=" navbar navbar-expand-sm bg-light navbar-light ">
                 <Link to="/" className="navbar-brand">
-                 <img src={logoheader}/><h5 className="p-2">Coffees'</h5>
+                 <img src={logoheader}/>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
                     <span className="navbar-toggler-icon"></span>
@@ -49,7 +50,7 @@ export default class Navbar extends Component {
                             )
                         })}
                         <li className="nav-item ml-sm-5">
-                            <FaCartArrowDown className="cart-icon" />
+                            {/* <FaCartArrowDown className="cart-icon snipcart-checkout" /> */}
                         </li>
                     </ul>
                 </div>
